@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+main {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+.vagues {
+	width: 100%;
+}
+nav {
+	background-color: var(--darkpink);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 48px 24px 24px 24px;
+}
+li {
+	list-style-type: none;
+}
+ul {
+	display: none;
+}
+.hero {
+	background-color: var(--darkpink);
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	position: relative;
+}
+h1 {
+	text-align: start;
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 42px;
+	color: var(--white);
+	line-height: 48px;
+	letter-spacing: 0%;
+}
+
+.start {
+	display: flex;
+	flex-direction: column;
+
+	gap: 12px;
+	width: 85%;
+	padding: 24px;
+}
+.licorne {
+	display: none;
+}
+.button {
+	text-decoration: none;
+	color: var(--white);
+	font-family: var(--poppins);
+	font-weight: 700;
+	font-style: Bold;
+	font-size: 14px;
+	background-color: var(--cyanblue);
+	line-height: 100%;
+	letter-spacing: 0%;
+	padding: 12px 24px;
+	border-radius: 9999px;
+	width: max-content;
+}
+.mythos {
+	color: var(--white);
+	font-family: var(--poppins);
+	font-weight: 400;
+
+	font-size: 1rem;
+	line-height: 100%;
+}
+.advantage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 90%;
+}
+.ai {
+	font-family: var(--poppins);
+	font-weight: 700;
+
+	font-size: 1rem;
+
+	line-height: 100%;
+}
+@media screen and (min-width: 768px) {
+	ul {
+		display: block;
+		display: flex;
+		gap: 8px;
+	}
+	a {
+		color: var(--white);
+		font-family: var(--poppins);
+		font-weight: 700;
+		font-style: Bold;
+		font-size: 16px;
+		line-height: 100%;
+		letter-spacing: 0%;
+		text-decoration: none;
+	}
+	.burger {
+		display: none;
+	}
+	.start {
+		width: 50%;
+	}
+	.licorne {
+		display: block;
+		position: absolute;
+		right: 30px;
+		top: 60px;
+	}
+	@media screen and (min-width: 1024px) {
+		.start {
+			width: 30%;
+		}
+	}
+}
