@@ -267,6 +267,88 @@ button {
 	flex-direction: column;
 	gap: 12px;
 }
+footer {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	align-self: center;
+	gap: 24px;
+}
+.autre {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.company,
+.support,
+.follow,
+.ressource {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.grid {
+	display: grid;
+	grid-template-areas:
+		"c s"
+		"f r";
+	gap: 16px;
+}
+.company {
+	grid-area: c;
+}
+.support {
+	grid-area: s;
+}
+.follow {
+	grid-area: f;
+}
+.ressource {
+	grid-area: r;
+}
+.hr{
+	grid-area: h;
+}
+.licornee{
+	grid-area: l;
+}
+.credit {
+	font-family: var(--poppins);
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 14px;
+	color: var(--lightgrey);
+	line-height: 100%;
+}
+h5 {
+	font-family: var(--poppins);
+	font-weight: 800;
+	font-style: ExtraBold;
+	font-size: 1rem;
+	line-height: 100%;
+	text-align: start;
+	color: var(--mirageblack);
+}
+.st {
+	font-family: var(--poppins);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 100%;
+	text-align: start;
+	color: var(--lightgrey);
+}
+hr {
+	display: none;
+}
+.licorne2 {
+	display: none;
+}
+.licornee{
+	display: none;
+}
+.hr{
+	display: none;
+}
 @media screen and (min-width: 768px) {
 	ul {
 		display: block;
@@ -329,6 +411,9 @@ button {
 	.width {
 		width: 20%;
 	}
+	.grid {
+		grid-template-areas: "c s f r";
+	}
 	@media screen and (min-width: 1024px) {
 		.start {
 			width: 30%;
@@ -362,6 +447,27 @@ button {
 		}
 		.width {
 			width: 40%;
+		}
+		.hr{
+			display: block;
+		}
+		.licornee{
+			display: block;
+		}
+		hr{
+			display: block;
+			width: 2px;
+			height: 65px;
+			border: none;
+			align-self: center;
+			background-color: var(--lightgrey);
+		}
+		.licorne2{
+			display: block;
+		}
+		.grid{
+			grid-template-areas: "c s f r h l";
+			align-items: center;
 		}
 	}
 }
