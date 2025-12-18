@@ -43,7 +43,7 @@ h1 {
 	font-weight: 700;
 	font-style: Bold;
 	font-size: 42px;
-	color: var(--white);
+
 	line-height: 48px;
 	letter-spacing: 0%;
 }
@@ -81,8 +81,111 @@ h1 {
 	font-size: 1rem;
 	line-height: 100%;
 }
+.blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	padding: 64px;
+}
+.blog-article {
+	gap: 60px;
+	justify-items: center;
+	display: grid;
+	grid-template-areas:
+		"a"
+		"b"
+		"c"
+		"d"
+		"e";
+}
+.blog-article-div {
+	height: 229px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 12px;
+}
+.blog-article-div-1 {
+	grid-area: a;
+	background: center/cover
+		url(../assets/6f44897ca322cfd973d81567d302872dea81c8ac.png);
+}
+.blog-article-div-2 {
+	grid-area: b;
+	background: center/cover
+		url(../assets/816265f4630a9f7ef0449743697974c1436ab27f.png);
+}
+.blog-article-div-3 {
+	grid-area: c;
+	background: center/cover
+		url(../assets/9d4978d934253be00a947ee4e69f3e909b58cfaf.png);
+}
+.blog-article-div-4 {
+	grid-area: d;
+	background: center/cover
+		url(../assets/c6cc92bc91689971d73a7761b2342794579ea686.png);
+}
+
+.blog-article-div-5 {
+	grid-area: e;
+	background: center/cover
+		url(../assets/d57d5d371589f8445196886d82016907553cd996.png);
+}
+.blog-article-div-child {
+	display: flex;
+	justify-content: space-between;
+}
+.white-bg {
+	width: 70%;
+	background-color: var(--white);
+	border-radius: 12px;
+	padding: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.blanc {
+	color: var(--white);
+}
+.testimonial {
+	background-color: var(--darkpink);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.when {
+	font-family: Poppins;
+	font-weight: 800;
+	font-style: ExtraBold;
+	font-size: 18px;
+	color: var(--white);
+	line-height: 100%;
+	width: 40%;
+	text-align: center;
+}
+.dialogue{
+	display: flex;
+	justify-content: center;
+}
+.gadhi {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.meuf {
+	width: 90px;
+	height: 90px;
+}
+.flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 @media screen and (min-width: 768px) {
-ul {
+	ul {
 		display: block;
 		display: flex;
 		gap: 28px;
@@ -109,5 +212,4 @@ ul {
 		right: 30px;
 		top: 60px;
 	}
-
 }
