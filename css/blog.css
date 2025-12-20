@@ -431,9 +431,6 @@ hr {
   .grid {
     grid-template-areas: "c s f r";
   }
-  .grid {
-    grid-template-areas: "c s f r";
-  }
 }
 @media screen and (min-width: 1024px) {
   .blog-article {
